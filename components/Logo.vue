@@ -1,44 +1,40 @@
 <template>
-  <img class="logo" src="https://cdn.como.re/website/logo.svg" width="245" height="180">
+  <div>
+  <img v-if="this.$colorMode.value == 'dark'" class="logo" src="https://cdn.como.re/website/dark/logo.svg" width="245" height="180">
+  <img v-if="this.$colorMode.value == 'light'" class="logo" src="https://cdn.como.re/website/light/logo.svg" width="245" height="180">
+  </div>
 </template>
 
 <style>
 .logo {
-  -webkit-animation: slide-in-elliptic-bottom-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-elliptic-bottom-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   margin: auto;
 }
 
-@-webkit-keyframes slide-in-elliptic-bottom-fwd {
+@-webkit-keyframes scale-in-center {
   0% {
-    -webkit-transform: translateY(600px) rotateX(30deg) scale(0);
-            transform: translateY(600px) rotateX(30deg) scale(0);
-    -webkit-transform-origin: 50% 100%;
-            transform-origin: 50% 100%;
-    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
   }
   100% {
-    -webkit-transform: translateY(0) rotateX(0) scale(1);
-            transform: translateY(0) rotateX(0) scale(1);
-    -webkit-transform-origin: 50% -1400px;
-            transform-origin: 50% -1400px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
     opacity: 1;
   }
 }
-@keyframes slide-in-elliptic-bottom-fwd {
+@keyframes scale-in-center {
   0% {
-    -webkit-transform: translateY(600px) rotateX(30deg) scale(0);
-            transform: translateY(600px) rotateX(30deg) scale(0);
-    -webkit-transform-origin: 50% 100%;
-            transform-origin: 50% 100%;
-    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
   }
   100% {
-    -webkit-transform: translateY(0) rotateX(0) scale(1);
-            transform: translateY(0) rotateX(0) scale(1);
-    -webkit-transform-origin: 50% -1400px;
-            transform-origin: 50% -1400px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
     opacity: 1;
   }
 }
+
 </style>

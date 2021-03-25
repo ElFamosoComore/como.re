@@ -2,6 +2,7 @@
   "name": "como.re",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -16,5 +17,8 @@
     "core-js": "^3.9.1",
     "nuxt": "^2.15.3"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@nuxtjs/color-mode": "^2.0.5",
+    "@nuxtjs/svg": "^0.1.12"
+  }
 }

@@ -5,15 +5,15 @@
       <h1 class="title">
         Comore
       </h1>
-      <h2 class="subtitle">
-        {{ getSubtitle() }}
-      </h2>
       <div class="links">
-        <Link title="Github" logo="https://cdn.como.re/website/github.png" link="https://github.com/ElFamosoComore" />
-        <Link title="Comore#0001" logo="https://cdn.como.re/website/discord.png" />
-        <Link title="Reddit" logo="https://cdn.como.re/website/reddit.png" link="http://reddit.com/u/ElFamosoComore" />
+        <Link title="Github" logo="https://cdn.como.re/website/light/github.png" darkLogo="https://cdn.como.re/website/dark/github.png" link="https://github.com/ElFamosoComore" />
+        <Link title="Comore#0001" logo="https://cdn.como.re/website/light/discord.png" darkLogo="https://cdn.como.re/website/dark/discord.png" />
+        <Link title="Reddit" logo="https://cdn.como.re/website/light/reddit.png" link="https://reddit.com/u/ElFamosoComore" />
+        <Link title="comore.uno" logo="https://cdn.como.re/website/light/uno.png" darkLogo="https://cdn.como.re/website/dark/uno.png" link="https://comore.uno" />
       </div>
     </div>
+
+    <ModeToggleButton class="mode-switcher" v-bind:checked="this.$colorMode.value" />
   </div>
 </template>
 
@@ -22,8 +22,6 @@ export default {
   data() {
     return {
       subtitles: [
-        "Trou de balle",
-        "Gnugnu"
       ]
     }
   },
@@ -63,11 +61,19 @@ a:-webkit-any-link{
   display: block;
   font-weight: 300;
   font-size: 100px;
-  color: #2e2e30;
+  color: var(--color-primary);
   letter-spacing: 1px;
+  padding-bottom: 0.40em;
 
   -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.mode-switcher {
+  position: absolute; 
+  bottom: 0; 
+  width: 50%; 
+  padding-bottom: 0.75em;
 }
 
 @-webkit-keyframes tracking-in-expand {
@@ -98,7 +104,7 @@ a:-webkit-any-link{
 .subtitle {
   font-weight: 300;
   font-size: 42px;
-  color: #526488;
+  color: var(--color-secondary);
   word-spacing: 5px;
   padding-bottom: 15px;
   font-style: italic;

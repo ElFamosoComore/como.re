@@ -5,7 +5,7 @@
     rel="noopener noreferrer"
     class="button--grey"
 >
-    <img :src="logo" class="platform_logo" width="32" height="32">
+    <img :src="logo" class="platform_logo" height="32">
     <h5 class="platform_title">{{ title }}</h5>
 </a>
 </template>

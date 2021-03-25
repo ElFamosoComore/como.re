@@ -11,7 +11,8 @@
       <div class="links">
         <Link title="Github" logo="https://cdn.como.re/website/github.png" link="https://github.com/ElFamosoComore" />
         <Link title="Comore#0001" logo="https://cdn.como.re/website/discord.png" />
-        <Link title="Reddit" logo="https://cdn.como.re/website/reddit.png" link="http://reddit.com/u/ElFamosoComore" />
+        <Link title="Reddit" logo="https://cdn.como.re/website/reddit.png" link="https://reddit.com/u/ElFamosoComore" />
+        <Link title="comore.uno" logo="https://cdn.como.re/website/uno.png" link="https://comore.uno" />
       </div>
     </div>
   </div>
@@ -22,8 +23,8 @@ export default {
   data() {
     return {
       subtitles: [
-        "Trou de balle",
-        "Gnugnu"
+        "Créateur de conneries depuis 2005",
+        "Glandeur ultime depuis 2005"
       ]
     }
   },

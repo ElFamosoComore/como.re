@@ -7,7 +7,7 @@
       </h1>
       <div class="links">
         <Link title="Github" logo="https://cdn.como.re/website/light/github.png" darkLogo="https://cdn.como.re/website/dark/github.png" link="https://github.com/ElFamosoComore" />
-        <Link title="Comore#0001" logo="https://cdn.como.re/website/light/discord.png" darkLogo="https://cdn.como.re/website/dark/discord.png" />
+        <Link title="Comore#2857" logo="https://cdn.como.re/website/light/discord.png" darkLogo="https://cdn.como.re/website/dark/discord.png" />
         <Link title="Reddit" logo="https://cdn.como.re/website/light/reddit.png" link="https://reddit.com/u/ElFamosoComore" />
         <Link title="comore.uno" logo="https://cdn.como.re/website/light/uno.png" darkLogo="https://cdn.como.re/website/dark/uno.png" link="https://comore.uno" />
       </div>

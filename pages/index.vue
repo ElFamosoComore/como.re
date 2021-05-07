@@ -11,6 +11,10 @@
         <Link title="Reddit" logo="https://cdn.como.re/website/light/reddit.png" link="https://reddit.com/u/ElFamosoComore" />
         <Link title="comore.uno" logo="https://cdn.como.re/website/light/uno.png" darkLogo="https://cdn.como.re/website/dark/uno.png" link="https://comore.uno" />
       </div>
+      <div class="wallets">
+        <Wallet name="Bitcoin" wallet="bc1q6fqf72n3nydqh30qmfw54cmyu5jlxg7gzevhwd" logo="https://en.bitcoin.it/w/images/en/2/29/BC_Logo_.png" />
+        <Wallet name="Bitcoin Cash" wallet="qrthyyap23wypf7dydwqqh2j97zyuzw0zg33ez55tt" logo="https://upload.wikimedia.org/wikipedia/commons/5/58/Bitcoin_Cash.png" />
+      </div>
     </div>
 
     <ModeToggleButton class="mode-switcher" v-bind:checked="this.$colorMode.value" />
@@ -67,6 +71,11 @@ a:-webkit-any-link{
 
   -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.wallets {
+  -webkit-animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .mode-switcher {
@@ -133,6 +142,30 @@ a:-webkit-any-link{
   100% {
     -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
             transform: rotateY(0deg) translateY(0) skewY(0deg);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes flip-in-hor-bottom {
+  0% {
+    -webkit-transform: rotateX(80deg);
+            transform: rotateX(80deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+    opacity: 1;
+  }
+}
+@keyframes flip-in-hor-bottom {
+  0% {
+    -webkit-transform: rotateX(80deg);
+            transform: rotateX(80deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
     opacity: 1;
   }
 }

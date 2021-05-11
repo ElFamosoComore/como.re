@@ -7,13 +7,14 @@
       </h1>
       <div class="links">
         <Link title="Github" logo="https://cdn.como.re/website/light/github.png" darkLogo="https://cdn.como.re/website/dark/github.png" link="https://github.com/ElFamosoComore" />
-        <Link title="Comore#2857" logo="https://cdn.como.re/website/light/discord.png" darkLogo="https://cdn.como.re/website/dark/discord.png" />
+        <Link title="Comore#0001" logo="https://cdn.como.re/website/light/discord.png" darkLogo="https://cdn.como.re/website/dark/discord.png" />
         <Link title="Reddit" logo="https://cdn.como.re/website/light/reddit.png" link="https://reddit.com/u/ElFamosoComore" />
         <Link title="comore.uno" logo="https://cdn.como.re/website/light/uno.png" darkLogo="https://cdn.como.re/website/dark/uno.png" link="https://comore.uno" />
       </div>
       <div class="wallets">
         <Wallet name="Bitcoin" wallet="bc1q6fqf72n3nydqh30qmfw54cmyu5jlxg7gzevhwd" logo="https://en.bitcoin.it/w/images/en/2/29/BC_Logo_.png" />
         <Wallet name="Bitcoin Cash" wallet="qrthyyap23wypf7dydwqqh2j97zyuzw0zg33ez55tt" logo="https://upload.wikimedia.org/wikipedia/commons/5/58/Bitcoin_Cash.png" />
+        <Wallet name="IOTA" wallet="iota1qqt3s30dyn56v6n573ck9lm3rgpjd2f3acrhjwkz3t6t0tasud5yjkkuy7g" logo="https://cdn.como.re/website/light/iota.svg" darkLogo="https://cdn.como.re/website/dark/iota.svg" />
       </div>
     </div>
 
@@ -23,17 +24,7 @@
 
 <script>
 export default {
-  data() {
-    return {
-      subtitles: [
-      ]
-    }
-  },
-  methods: {
-    getSubtitle() {
-      return this.subtitles[Math.floor(Math.random() * this.subtitles.length)];
-    }
-  }
+
 }
 </script>
 

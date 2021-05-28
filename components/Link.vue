@@ -6,7 +6,7 @@
     class="button--grey"
 >
     <img v-if="this.$colorMode.value != 'dark' || !darkLogo" :src="logo" class="platform_logo" height="32">
-    <img v-if="this.$colorMode.value == 'dark' && darkLogo" :src="darkLogo" class="platform_logo" height="32">
+    <img v-else :src="darkLogo" class="platform_logo" height="32">
     <h5 class="platform_title">{{ title }}</h5>
 </a>
 </template>

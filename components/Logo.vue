@@ -1,7 +1,7 @@
 <template>
   <div>
   <img v-if="this.$colorMode.value == 'dark'" class="logo" src="https://cdn.como.re/website/dark/logo.svg" width="245" height="180">
-  <img v-if="this.$colorMode.value == 'light'" class="logo" src="https://cdn.como.re/website/light/logo.svg" width="245" height="180">
+  <img v-else class="logo" src="https://cdn.como.re/website/light/logo.svg" width="245" height="180">
   </div>
 </template>
 

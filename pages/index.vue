@@ -9,7 +9,7 @@
         <Link title="Github" logo="https://cdn.como.re/website/light/github.png" darkLogo="https://cdn.como.re/website/dark/github.png" link="https://github.com/ElFamosoComore" />
         <Link title="Comore#0001" logo="https://cdn.como.re/website/light/discord.png" darkLogo="https://cdn.como.re/website/dark/discord.png" />
         <Link title="Reddit" logo="https://cdn.como.re/website/light/reddit.png" link="https://reddit.com/u/ElFamosoComore" />
-        <Link title="comore.uno" logo="https://cdn.como.re/website/light/uno.png" darkLogo="https://cdn.como.re/website/dark/uno.png" link="https://comore.uno" />
+        <Link title="uno.como.re" logo="https://cdn.como.re/website/light/uno.png" darkLogo="https://cdn.como.re/website/dark/uno.png" link="https://uno.como.re" />
       </div>
       <div class="wallets">
         <Wallet name="Bitcoin" wallet="bc1q6fqf72n3nydqh30qmfw54cmyu5jlxg7gzevhwd" logo="https://en.bitcoin.it/w/images/en/2/29/BC_Logo_.png" />
